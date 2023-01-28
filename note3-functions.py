@@ -1,4 +1,4 @@
-# Defining Functions
+# [Defining Functions]
 def greet1():
     print("Hi there")
     print("Welcome aboard")
@@ -6,7 +6,7 @@ def greet1():
 
 greet1()
 
-# Arguments
+# [Arguments]
 
 
 def greet2(first_name, last_name):
@@ -16,7 +16,7 @@ def greet2(first_name, last_name):
 greet2("Robin", "Correa")
 greet2("Regina", "Ligutan")
 
-# Types of Functions: Type1 - Carries out task, Type2 - Calculates and return a value, All functions return "None" as default
+# [Types of Functions]: Type1 - Carries out task, Type2 - Calculates and return a value, All functions return "None" as default
 
 
 def get_greeting(name):
@@ -26,7 +26,7 @@ def get_greeting(name):
 message = get_greeting("Robin")
 print(message)
 
-# Keyword Arguments
+# [Keyword Arguments]
 
 
 def increment1(number, by):
@@ -35,7 +35,7 @@ def increment1(number, by):
 
 print(increment1(number=2, by=1))
 
-# Default Arguments
+# [Default Arguments]
 
 
 def increment2(number, by=1):
@@ -44,7 +44,7 @@ def increment2(number, by=1):
 
 print(increment2(number=2))
 
-# xargs
+# [xargs]
 
 
 def multiply(*numbers):  # tuple
@@ -56,7 +56,7 @@ def multiply(*numbers):  # tuple
 
 print(multiply(2, 3, 4, 5))
 
-# xxargs - to transform values into dictionary
+# [xxargs] - to transform values into dictionary
 
 
 def save_user(**user):
@@ -67,7 +67,7 @@ def save_user(**user):
 
 save_user(id=1, name="Robin", age=28)  # {'id': 1, 'name': 'Robin', 'age': 28}
 
-# Exercise
+# [Exercise]
 
 
 def fizz_buzz(input):

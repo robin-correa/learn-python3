@@ -1,7 +1,7 @@
-# Comparison operator
+# [Comparison operator]
 print(21 == "21")  # False
 
-# Conditional Statements
+# [Conditional Statements]
 temperature = 21
 if temperature > 30:
     print("It's warm")  # under if condition
@@ -12,13 +12,13 @@ else:
     print("It's cold")  # under elif condition
 print("Done")  # outside if
 
-# Ternary Operator
+# [Ternary Operator]
 age = 21
 
 message = "Eligible" if age >= 18 else "Not eligible"
 print(message)
 
-# Logical Operators: and, or, not
+# [Logical Operators]: and, or, not
 high_income = True
 good_credit = True
 student = False
@@ -28,20 +28,20 @@ if (high_income or good_credit) and not student:
 else:
     print("Not eligible")
 
-# Chaining Comparison
+# [Chaining Comparison]
 age = 17
 # if age >= 18 and age < 65:
 if 18 <= age < 65:
     print("Eligible")
 
-# For loops
+# [For loops]
 for number in range(3):  # starts with 0 to 2
     print("Attempt", number)
 
 for number in range(1, 3):  # starts with 1 to 2
     print("Attempt", number)
 
-# For .. Else
+# [For .. Else]
 successful = True
 for number in range(3):
     print("Attempt")
@@ -52,7 +52,7 @@ else:
     # will only execute if successful = False / if not break
     print("Attempted 3 times and failed")
 
-# Nested Loops
+# [Nested Loops]
 for x in range(5):
     for y in range(3):
         print(f"({x}, {y})")
@@ -64,13 +64,13 @@ for x in "Python":  # iterable string: P y t h o n
 for x in [1, 2, 3, 4]:  # iterable list: 1, 2, 3, 4
     print(x)
 
-# While Loops
+# [While Loops]
 # command = ""
 # while command.lower() != "quit":
 #     command = input(">")
 #     print("ECHO", command)
 
-# Infinite Loops
+# [Infinite Loops]
 # while True:
 #     command = input(">")
 #     print("ECHO", command)

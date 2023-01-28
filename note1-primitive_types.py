@@ -1,11 +1,11 @@
-# Formatted string
+# [Formatted string]
 import math
 first_name = "Robin"
 last_name = "Correa"
 full_name = f"{first_name} {last_name}"
 print(full_name)
 
-# String methods
+# [String methods]
 course = "Python Programming"
 print(course.upper())  # PYTHON PROGRAMMING
 
@@ -18,12 +18,12 @@ print("Pro" in course)  # boolean: True
 print("PHP" in course)  # boolean: False
 
 
-# Numbers
+# [Numbers]
 print(round(20.9))  # 21
 print(abs(-21))  # 21
 print(math.ceil(20.1))  # 21
 
-# Type Conversion
+# [Type Conversion]
 x = "20"
 # y = x + 1 - Error
 y = int(x) + 1  # - Correct
