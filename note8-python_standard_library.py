@@ -1,5 +1,10 @@
 # [Working with Paths]
 
+import sys
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+import webbrowser
 import time
 import json
 from datetime import datetime
@@ -60,3 +65,31 @@ movies = [
 data = Path('movies.json').read_text()
 movies = json.loads(data)
 print(movies[0])  # {'id': 1, 'title': 'Terminator', 'year': 1984}
+
+# [Opening the Browser]
+# print("Deployment completed")
+# webbrowser.open("https://www.linkedin.com/in/robin-correa-856010147/")
+
+# [Sending emails]
+
+# message = MIMEMultipart()
+# message["from"] = "Robin Correa"
+# message["to"] = "testuser@gmail.com"
+# message["subject"] = "This is a test"
+# message.attach(MIMEText("Body"))
+
+# with smtplib.SMTP(host="smtp.gmail.com", port=587) as smtp:
+#     smtp.ehlo()
+#     smtp.starttls()
+#     smtp.login("testuser@gmail.com", "testpassword")
+#     smtp.send_message(message)
+#     print("Sent...")
+
+# [Command-line Arguments]
+
+# Command: python .\note8-python_standard_library.py password21
+if len(sys.argv) == 1:
+    print("USAGE: python note8-python_standard_library.py <password>")
+else:
+    password = sys.argv[1]
+    print("Password", password)  # Password password21
